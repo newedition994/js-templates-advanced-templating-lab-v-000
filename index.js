@@ -4,6 +4,12 @@ function initForm() {
   document.getElementById("main")[0].innerHTML = template({'submitAction': 'createRecipe()'})
 }
 
+function createRecipe(){
+  var recipe = getRecipeVals()
+  var recipeTemplate = document.getElementById("recipeTemplate").innerHTML
+  var template = Handlebars.compile(recipeTemplate)
+  document.getElementById("main").innerHTML = template(recipe)
+}
 
 
 
