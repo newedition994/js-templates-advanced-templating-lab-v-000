@@ -50,6 +50,7 @@ function getRecipeVals() {
 
 
 
+
 function init() {
   //put any page initialization/handlebars initialization here
   handlebarsSetup()
